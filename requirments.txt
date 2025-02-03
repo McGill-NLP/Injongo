@@ -1,0 +1,10 @@
+datasets
+transformers
+torch>=2.4.0
+wandb
+pprint
+matplotlib
+numpy
+pandas
+scikit-learn
+evaluate

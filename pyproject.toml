@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multiglingual-dataset"
+version = "0.1.0"
+description = "Injongo Dataset"
+readme = "README.md"
+authors = [
+    { name = "Anonymized", email = "Anonymize@Anonymize.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "requests",
+    "ijson",
+    "datasets",
+    "transformers",
+    "torch>=2.4.0",
+    "wandb",
+    "matplotlib",
+    "pandas",
+    "scikit-learn",
+    "evaluate"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}

@@ -1,7 +1,23 @@
+data/prompts
+-data/result*
+*.html
+wandb/
+data/results*/
+additional/
+data/weight/*
+mlruns/
+batch_states/
+task/log/
+task/GPU_*.sh
+out/
+sft-dataset/
+data/weight
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+.DS_Store
 
 # C extensions
 *.so
@@ -50,6 +66,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+.vscode/
 
 # Translations
 *.mo
