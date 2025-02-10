@@ -210,6 +210,13 @@ tokenized_datasets = get_datasets(args.language).map(
     data_preprocess[args.task], batched=True
 )
 
+# if not args.eval:
+#     import wandb
+
+#     wandb.init(
+#         project="Multilingual-Dataset-FT",
+#         name=f"{model_basename(model_checkpoint)}/{args.task}/{args.language}",
+#     )
 import random
 
 trainer_args = Seq2SeqTrainingArguments(
@@ -224,8 +231,10 @@ trainer_args = Seq2SeqTrainingArguments(
     gradient_accumulation_steps=gradient_accumulation_steps,
     num_train_epochs=20,
     weight_decay=0.01,
+    # report_to="wandb" if not args.eval else "none",
     save_safetensors=True,
     save_strategy="epoch",
+    # save_total_limit=10,
     optim="adamw_torch",
     lr_scheduler_type="cosine",
     dataloader_num_workers=4,
@@ -242,14 +251,17 @@ trainer_args = Seq2SeqTrainingArguments(
     run_name=f"{args.task}/{model_name}/{args.language}",
     overwrite_output_dir=True,
     seed=args.seed,
+    # eval_strategy="epoch",
     learning_rate=lr,
     per_device_train_batch_size=batch_size,
     per_device_eval_batch_size=batch_size // 8,
     gradient_accumulation_steps=gradient_accumulation_steps,
     num_train_epochs=20,
     weight_decay=0.01,
+    # report_to="wandb" if not args.eval else "none",
     save_safetensors=True,
     save_strategy="epoch",
+    # save_total_limit=10,
     optim="adamw_torch",
     lr_scheduler_type="cosine",
     dataloader_num_workers=4,

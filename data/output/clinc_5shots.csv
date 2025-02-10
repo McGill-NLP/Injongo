@@ -1,0 +1,321 @@
+intent,text,domain,spans,logical_form,split
+alarm,wake me up at noon tomorrow,clinc,,[SL: alarm],train
+alarm,set my alarm for getting up,clinc,,[SL: alarm],train
+alarm,make sure my alarm is set for three thirty in the morning,clinc,,[SL: alarm],train
+alarm,please set an alarm for mid day,clinc,,[SL: alarm],train
+alarm,have an alarm set for three in the morning,clinc,,[SL: alarm],train
+balance,savings account balance at chase bank please,clinc,,[SL: balance],train
+balance,check chase bank for my checking balance,clinc,,[SL: balance],train
+balance,what is my checking account balance at chase,clinc,,[SL: balance],train
+balance,i want my checking balance at chase,clinc,,[SL: balance],train
+balance,what's my savings balance at chase,clinc,,[SL: balance],train
+bill_balance,the bill for water and electricity is how much,clinc,,[SL: bill_balance],train
+bill_balance,what's my bill for water and electricity,clinc,,[SL: bill_balance],train
+bill_balance,"for my water and electricity, how much is the bill",clinc,,[SL: bill_balance],train
+bill_balance,how much is the bill for my water and electricity,clinc,,[SL: bill_balance],train
+bill_balance,my water and electricity bill is how much,clinc,,[SL: bill_balance],train
+book_flight,what's the cheapest fares from lax to sfo for round trip flights leaving april 1st and returning april 7th,clinc,,[SL: book_flight],train
+book_flight,"for the dates april 1st to the 7th, find me round trip air tickets from la to sfo",clinc,,[SL: book_flight],train
+book_flight,what southwest flights are there for lax to sfo arriving april 1st and returning april 7th,clinc,,[SL: book_flight],train
+book_flight,what airlines have flights round trip on april 1st to april 7th from lax to sfo,clinc,,[SL: book_flight],train
+book_flight,find me round trip flights out of lax to sfox,clinc,,[SL: book_flight],train
+book_hotel,i need a bed in brownsburg near walmart from apil 4th until the 5th,clinc,,[SL: book_hotel],train
+book_hotel,i need a room in indianapolis near the track from may 2nd through the 5th,clinc,,[SL: book_hotel],train
+book_hotel,i need lodging in lizton near the ice cream parlor from may 3rd until the 8th,clinc,,[SL: book_hotel],train
+book_hotel,need a place to crash in elizabeth near the refinery from june 4th until the 9th,clinc,,[SL: book_hotel],train
+book_hotel,i need a place to stay in newark near a bodega from may 2nd through the 4th,clinc,,[SL: book_hotel],train
+calendar_update,add my dentist appointment to the calendar,clinc,,[SL: calendar_update],train
+calendar_update,add a vet appointment for 5 pm on saturday,clinc,,[SL: calendar_update],train
+calendar_update,i need to edit this event out of my calendar,clinc,,[SL: calendar_update],train
+calendar_update,please remove an event from this calendar,clinc,,[SL: calendar_update],train
+calendar_update,i no longer want this event in my calendar,clinc,,[SL: calendar_update],train
+cancel_reservation,remove my reservation at outback for timmy,clinc,,[SL: cancel_reservation],train
+cancel_reservation,can you cancel the reservation for kyle's party at red lobster,clinc,,[SL: cancel_reservation],train
+cancel_reservation,cancel my party reservation for brad at longhorn,clinc,,[SL: cancel_reservation],train
+cancel_reservation,get rid of my reservation at chez francois for jennifer,clinc,,[SL: cancel_reservation],train
+cancel_reservation,cancel the reservation at olive garden for tommy,clinc,,[SL: cancel_reservation],train
+car_rental,i want to reserve a convertible from july 2nd through july 18th for los angeles,clinc,,[SL: car_rental],train
+car_rental,i'd like to rent a vehicle from nov 1st to nov 15th in san antonio and i need a 15 passenger van,clinc,,[SL: car_rental],train
+car_rental,"i want to rent the cheapest car for charlottesville, virginia for march 7th through 10th, that's monday, tuesday, wednesday and thursday",clinc,,[SL: car_rental],train
+car_rental,i'd like to reserve a high-end car that seats 5 comfortably for april 12th through 18th for st louis missouri,clinc,,[SL: car_rental],train
+car_rental,"i need a van that seats 8 or more for new york city, august 12th, 13th, and 14th",clinc,,[SL: car_rental],train
+confirm_reservation,verify that i have reservations at chilis for john doe,clinc,,[SL: confirm_reservation],train
+confirm_reservation,can you check my reservations for mortons under david winters,clinc,,[SL: confirm_reservation],train
+confirm_reservation,can you check for reservations at wongs chinese for john acer,clinc,,[SL: confirm_reservation],train
+confirm_reservation,check and confirm reservations at ruth chris for carol lee,clinc,,[SL: confirm_reservation],train
+confirm_reservation,verify that my reservations at won wons for joe lee are good,clinc,,[SL: confirm_reservation],train
+cook_time,how long will the turkey take to cook,clinc,,[SL: cook_time],train
+cook_time,so how long do you think the chicken will take,clinc,,[SL: cook_time],train
+cook_time,how long does pizza take to cook,clinc,,[SL: cook_time],train
+cook_time,how long is the chicken gonna take,clinc,,[SL: cook_time],train
+cook_time,how long will the chicken take to cook,clinc,,[SL: cook_time],train
+exchange_rate,how many pesos can i get for one dollar,clinc,,[SL: exchange_rate],train
+exchange_rate,what is the current going rate for exchanging dollars for pesos,clinc,,[SL: exchange_rate],train
+exchange_rate,tell me the exchange rate between dollars and pesos,clinc,,[SL: exchange_rate],train
+exchange_rate,let me know what the exchange rate between dollars and pesos is,clinc,,[SL: exchange_rate],train
+exchange_rate,what's the exchange rate between dollars and pesos,clinc,,[SL: exchange_rate],train
+food_last,jello should stay in the fridge for how long,clinc,,[SL: food_last],train
+food_last,when will my milk be no good,clinc,,[SL: food_last],train
+food_last,when will my eggs go bad,clinc,,[SL: food_last],train
+food_last,how long will my eggs be good for,clinc,,[SL: food_last],train
+food_last,what date does my apple juice expire,clinc,,[SL: food_last],train
+freeze_account,can you block my chase account right away please,clinc,,[SL: freeze_account],train
+freeze_account,i want my chase account blocked immediately,clinc,,[SL: freeze_account],train
+freeze_account,i need you to block my chase account immediately,clinc,,[SL: freeze_account],train
+freeze_account,can you put a block on my chase account right away,clinc,,[SL: freeze_account],train
+freeze_account,please block my chase account right away,clinc,,[SL: freeze_account],train
+ingredients_list,what do you put in chicken noodle casserole,clinc,,[SL: ingredients_list],train
+ingredients_list,what goes into chicken noodle casserole,clinc,,[SL: ingredients_list],train
+ingredients_list,what do i need to make chicken noodle casserole,clinc,,[SL: ingredients_list],train
+ingredients_list,how do you make chicken noodle casserole,clinc,,[SL: ingredients_list],train
+ingredients_list,chicken noodle casserole is made from what,clinc,,[SL: ingredients_list],train
+interest_rate,i want to know my interest rate,clinc,,[SL: interest_rate],train
+interest_rate,tell me my interest rate,clinc,,[SL: interest_rate],train
+interest_rate,what interest rate am i paying,clinc,,[SL: interest_rate],train
+interest_rate,my interest rate please,clinc,,[SL: interest_rate],train
+interest_rate,how do i know the interest rate for my signature account,clinc,,[SL: interest_rate],train
+international_visa,"to visit cambodia, do i need an international visa",clinc,,[SL: international_visa],train
+international_visa,do i need to get a visa to visit canada,clinc,,[SL: international_visa],train
+international_visa,will i need a visa to visit ireland,clinc,,[SL: international_visa],train
+international_visa,will i need a travel visa to go to canary islands,clinc,,[SL: international_visa],train
+international_visa,i want to visit portugal do i need a travel visa,clinc,,[SL: international_visa],train
+make_call,place a phone call to yiming,clinc,,[SL: make_call],train
+make_call,phone lobby,clinc,,[SL: make_call],train
+make_call,can you call dominos pizza,clinc,,[SL: make_call],train
+make_call,can you redial the last number dialed,clinc,,[SL: make_call],train
+make_call,call 911,clinc,,[SL: make_call],train
+meal_suggestion,can you give me a french dinner suggestion,clinc,,[SL: meal_suggestion],train
+meal_suggestion,"suggest a meal from laos to me, please",clinc,,[SL: meal_suggestion],train
+meal_suggestion,can you give me a vietnamese meal suggestion,clinc,,[SL: meal_suggestion],train
+meal_suggestion,suggest a meal from burma to me,clinc,,[SL: meal_suggestion],train
+meal_suggestion,can you give me a vietnamese dinner suggestion,clinc,,[SL: meal_suggestion],train
+min_payment,what's the minimum i owe on the car payment,clinc,,[SL: min_payment],train
+min_payment,what's the least amount i need to pay on the electric bill,clinc,,[SL: min_payment],train
+min_payment,what's the smallest amount i can pay on the water bill,clinc,,[SL: min_payment],train
+min_payment,what's the minimum amount for my electric bill,clinc,,[SL: min_payment],train
+min_payment,what's the least i can pay on the medical payments for february,clinc,,[SL: min_payment],train
+pay_bill,"i want to pay my bill, please",clinc,,[SL: pay_bill],train
+pay_bill,pay my water bill with my charles schwab account,clinc,,[SL: pay_bill],train
+pay_bill,i'd like to pay my bill,clinc,,[SL: pay_bill],train
+pay_bill,pay my internet bill with my discover account,clinc,,[SL: pay_bill],train
+pay_bill,can you help me pay a bill,clinc,,[SL: pay_bill],train
+pin_change,how do i change my pin for number for my abc bank account,clinc,,[SL: pin_change],train
+pin_change,what do i need to do to change my abc bank account pin number,clinc,,[SL: pin_change],train
+pin_change,i have no idea what the pin is for my checking account,clinc,,[SL: pin_change],train
+pin_change,i cannot recall the pin for my savings account,clinc,,[SL: pin_change],train
+pin_change,i forgot the pin number for my college fund account,clinc,,[SL: pin_change],train
+play_music,can i get some music by three six mafia in here,clinc,,[SL: play_music],train
+play_music,what does x’s music sound like,clinc,,[SL: play_music],train
+play_music,may i hear some music by fleet foxes,clinc,,[SL: play_music],train
+play_music,can i hear some music by cloud control,clinc,,[SL: play_music],train
+play_music,can x’s music be played,clinc,,[SL: play_music],train
+plug_type,do i need a socket converter if i'm going to mexico,clinc,,[SL: plug_type],train
+plug_type,does england have a different plug type and if so what is it,clinc,,[SL: plug_type],train
+plug_type,is there a conversion plug if you travel to australia,clinc,,[SL: plug_type],train
+plug_type,what kind of plug type do they use in russia,clinc,,[SL: plug_type],train
+plug_type,what type of plug do i need to bring if i visit japan,clinc,,[SL: plug_type],train
+recipe,whats the best way to roast a chicken,clinc,,[SL: recipe],train
+recipe,how do i make pie crust,clinc,,[SL: recipe],train
+recipe,find a recipe for german chocolate cake,clinc,,[SL: recipe],train
+recipe,how do i fry pork chops,clinc,,[SL: recipe],train
+recipe,how do i cook boiled eggs,clinc,,[SL: recipe],train
+restaurant_reservation,"you need to call the melt in lakewood for a table for at 2:00, monday, the first week in march",clinc,,[SL: restaurant_reservation],train
+restaurant_reservation,"hey computer, make a reservation for 2 for my parents at red lobster on wednseday next, 2:00pm if possible",clinc,,[SL: restaurant_reservation],train
+restaurant_reservation,"i think we should reserve dad's regular table friday for 6 people, use his name, make that close to 4:00 pm at the club",clinc,,[SL: restaurant_reservation],train
+restaurant_reservation,"listen i need to get a reservation for , me and teresa at georgetown cafe on tuesday at 7:00 pm",clinc,,[SL: restaurant_reservation],train
+restaurant_reservation,can you make me a reservation for 4 pm on the 22nd at ruth's,clinc,,[SL: restaurant_reservation],train
+restaurant_reviews,do people like the donuts at tgi,clinc,,[SL: restaurant_reviews],train
+restaurant_reviews,are the donuts at tgi well reviewed,clinc,,[SL: restaurant_reviews],train
+restaurant_reviews,how are the donuts reviews at tgi,clinc,,[SL: restaurant_reviews],train
+restaurant_reviews,what are the comments on the donuts at tgi,clinc,,[SL: restaurant_reviews],train
+restaurant_reviews,are people recommending the donuts at tgi,clinc,,[SL: restaurant_reviews],train
+restaurant_suggestion,can you suggest a restaurant for me to eat tonight,clinc,,[SL: restaurant_suggestion],train
+restaurant_suggestion,tell me where to go since i want to eat out tonight,clinc,,[SL: restaurant_suggestion],train
+restaurant_suggestion,"i'm craving for italian food, where should i go",clinc,,[SL: restaurant_suggestion],train
+restaurant_suggestion,"suggest a restaurant for me to eat tonight, please",clinc,,[SL: restaurant_suggestion],train
+restaurant_suggestion,"i'm not going to cook today, can you suggest a restaurant",clinc,,[SL: restaurant_suggestion],train
+share_location,tell lydia and laura where i am located,clinc,,[SL: share_location],train
+share_location,share my location with brad and terry,clinc,,[SL: share_location],train
+share_location,tell john and sam where i am,clinc,,[SL: share_location],train
+share_location,share my location with darren and stacey,clinc,,[SL: share_location],train
+share_location,let cora and nancy know were i am now,clinc,,[SL: share_location],train
+shopping_list_update,delete fries from shopping list,clinc,,[SL: shopping_list_update],train
+shopping_list_update,take off fries from the shopping list,clinc,,[SL: shopping_list_update],train
+shopping_list_update,please take away the fries from the shopping list,clinc,,[SL: shopping_list_update],train
+shopping_list_update,remove fries from my shopping list,clinc,,[SL: shopping_list_update],train
+shopping_list_update,we no longer need fries on the shopping lisr,clinc,,[SL: shopping_list_update],train
+spending_history,how much did i spend at restaurants last week,clinc,,[SL: spending_history],train
+spending_history,how much have i spent lately on eating out,clinc,,[SL: spending_history],train
+spending_history,what did i spend at the grocery store yesterday,clinc,,[SL: spending_history],train
+spending_history,how much money did i spend at starbucks in the last week,clinc,,[SL: spending_history],train
+spending_history,what was the total i spent at home depot last month,clinc,,[SL: spending_history],train
+text,can you text elizabeth and tell them i forgot to bring drinks,clinc,,[SL: text],train
+text,text wenona and tell her we will be there tomorrow,clinc,,[SL: text],train
+text,text christopher and tell him i will stop by,clinc,,[SL: text],train
+text,text audrey and tell her i will be there soon,clinc,,[SL: text],train
+text,text christy and ask her what she wants for dinner,clinc,,[SL: text],train
+time,"what time is it in punta gorda, florida",clinc,,[SL: time],train
+time,"what time is it in glenwood springs, co",clinc,,[SL: time],train
+time,"what time is it in fredericksburg, tx",clinc,,[SL: time],train
+time,"what time is it in las vegas, nv",clinc,,[SL: time],train
+time,"what time is it in houston, tx",clinc,,[SL: time],train
+timezone,timezone of cuba,clinc,,[SL: timezone],train
+timezone,what is the time zone of france,clinc,,[SL: timezone],train
+timezone,french time zone,clinc,,[SL: timezone],train
+timezone,which timezone is colombia,clinc,,[SL: timezone],train
+timezone,time zone in france,clinc,,[SL: timezone],train
+transactions,before i make my mastercard payment can you tell me what i've recently charged on it,clinc,,[SL: transactions],train
+transactions,please tell me all of my recent transactions,clinc,,[SL: transactions],train
+transactions,i want to pay my amazon credit card but i need to know the last few transactions,clinc,,[SL: transactions],train
+transactions,before i pay my walmart credit card did i make any purchases using it recently,clinc,,[SL: transactions],train
+transactions,i need to know all the recent transactions i've made,clinc,,[SL: transactions],train
+transfer,i need $20000 transferred from my savings to my checking,clinc,,[SL: transfer],train
+transfer,complete a transaction from savings to checking of $20000,clinc,,[SL: transfer],train
+transfer,transfer $20000 from my savings account to checking account,clinc,,[SL: transfer],train
+transfer,take $20000 from savings and put it in checking,clinc,,[SL: transfer],train
+transfer,put $20000 into my checking account from my savings account,clinc,,[SL: transfer],train
+translate,what expression would i use to say i love you if i were an italian,clinc,,[SL: translate],train
+translate,"can you tell me how to say 'i do not speak much spanish', in spanish",clinc,,[SL: translate],train
+translate,"what is the equivalent of, 'life is good' in french",clinc,,[SL: translate],train
+translate,"tell me how to say, 'it is a beautiful morning' in italian",clinc,,[SL: translate],train
+translate,"if i were mongolian, how would i say that i am a tourist",clinc,,[SL: translate],train
+travel_notification,im going to be in canada from august 10th until august 12th,clinc,,[SL: travel_notification],train
+travel_notification,im going to be in slovakia from january 16th until january 19th,clinc,,[SL: travel_notification],train
+travel_notification,im going to be in paraguay from january 7th until january 10th,clinc,,[SL: travel_notification],train
+travel_notification,i'm going to be in thailand from october 15th until october 23rd,clinc,,[SL: travel_notification],train
+travel_notification,im going to be in jamaica from october 4th until october 8th,clinc,,[SL: travel_notification],train
+travel_suggestion,can you give me some suggestions to go site seeing when i get there,clinc,,[SL: travel_suggestion],train
+travel_suggestion,can you get me any recommendations for the place i'm traveling to,clinc,,[SL: travel_suggestion],train
+travel_suggestion,please suggest some fun tourist activities in tokyo,clinc,,[SL: travel_suggestion],train
+travel_suggestion,i need help with some fun tourist things to do in tokyo,clinc,,[SL: travel_suggestion],train
+travel_suggestion,could you tell me what fun tourist things i could do in tokyo,clinc,,[SL: travel_suggestion],train
+update_playlist,insert what i am listening to into my jazz playlist,clinc,,[SL: update_playlist],train
+update_playlist,add this tune to my jazz playlist,clinc,,[SL: update_playlist],train
+update_playlist,can you add this song to my jazz playlist,clinc,,[SL: update_playlist],train
+update_playlist,please add this song to my jazz playlist,clinc,,[SL: update_playlist],train
+update_playlist,add this song to my jazz playlist,clinc,,[SL: update_playlist],train
+weather,what are the conditions like in orlando,clinc,,[SL: weather],train
+weather,what's the temperature like in tampa,clinc,,[SL: weather],train
+weather,what's the forecast like for pittsburgh,clinc,,[SL: weather],train
+weather,what are the conditions like in sarasota,clinc,,[SL: weather],train
+weather,what's the climate like in chicago,clinc,,[SL: weather],train
+alarm,i'd like alarms set for 11am and 132pm,clinc,,[SL: alarm],dev
+balance,do i have more than $100 in my pnc account,clinc,,[SL: balance],dev
+bill_balance,how much is my kill bill bill for,clinc,,[SL: bill_balance],dev
+book_flight,can you find me a round trip flight from denver international to new york international on the 3rd through the 7th,clinc,,[SL: book_flight],dev
+book_hotel,by chance would it be possible to reserve me a hotel in afghanistan at the zoo for the 10th to the 15th,clinc,,[SL: book_hotel],dev
+calendar_update,"you can remove the field trip from my calendar for march 12, 2019",clinc,,[SL: calendar_update],dev
+cancel_reservation,i would like to cancel my reservation for nenuco's restaurant to x- tapas,clinc,,[SL: cancel_reservation],dev
+car_rental,i need a car rental this week,clinc,,[SL: car_rental],dev
+confirm_reservation,please double check my reservations for six at mani,clinc,,[SL: confirm_reservation],dev
+cook_time,how long do i need to cook pot au feu for,clinc,,[SL: cook_time],dev
+exchange_rate,how much is 100 dollars in euros,clinc,,[SL: exchange_rate],dev
+food_last,is my milk safe to drink after being in the refrigerator for a week,clinc,,[SL: food_last],dev
+freeze_account,may you stop a paymet on my account,clinc,,[SL: freeze_account],dev
+ingredients_list,i need a list of ingredients required to make lamb stew,clinc,,[SL: ingredients_list],dev
+interest_rate,what kind of interest can i expect with my chase account,clinc,,[SL: interest_rate],dev
+international_visa,"if i plan on travelling to this country, do i need a visa",clinc,,[SL: international_visa],dev
+make_call,call alex,clinc,,[SL: make_call],dev
+meal_suggestion,can you give me a chinese meal suggestion,clinc,,[SL: meal_suggestion],dev
+min_payment,what is the minimum amount due on my cable bill,clinc,,[SL: min_payment],dev
+pay_bill,can you assist with my utility bill payment,clinc,,[SL: pay_bill],dev
+pin_change,"i forgot my pin number for my credit union bank account, can you help",clinc,,[SL: pin_change],dev
+play_music,let me hear the song sympathy for the devil,clinc,,[SL: play_music],dev
+plug_type,what kind of sockets do the us use,clinc,,[SL: plug_type],dev
+recipe,i would like to learn to make cookies,clinc,,[SL: recipe],dev
+restaurant_reservation,please reserve a table for 2 at lucky's under the name melissa at 7 pm,clinc,,[SL: restaurant_reservation],dev
+restaurant_reviews,does mcdonald's have good reviews,clinc,,[SL: restaurant_reviews],dev
+restaurant_suggestion,where do you want to eat tonight,clinc,,[SL: restaurant_suggestion],dev
+share_location,give my location to stan,clinc,,[SL: share_location],dev
+shopping_list_update,"i'm not sure if watermelon is on my shopping list, but if it isn't can you put it on there",clinc,,[SL: shopping_list_update],dev
+spending_history,could you tell me what kind of money i've recently spent,clinc,,[SL: spending_history],dev
+text,send a text to joe,clinc,,[SL: text],dev
+time,what time is it in france,clinc,,[SL: time],dev
+timezone,what is the timezone of saigon,clinc,,[SL: timezone],dev
+transactions,show all purchases of video games,clinc,,[SL: transactions],dev
+transfer,transfer ten dollars from my wells fargo account to my bank of america account,clinc,,[SL: transfer],dev
+translate,"in spanish, meet me tomorrow is said how",clinc,,[SL: translate],dev
+travel_notification,"i'm going to be in canada from october 23rd to november 2nd, so can i let my bank know",clinc,,[SL: travel_notification],dev
+travel_suggestion,what's the best place to visit in arizona,clinc,,[SL: travel_suggestion],dev
+update_playlist,add this song to travel,clinc,,[SL: update_playlist],dev
+weather,what's is the current weather forecast,clinc,,[SL: weather],dev
+alarm,i want to set an alarm,clinc,,[SL: alarm],test
+alarm,set an alarm for 6 am tomorrow,clinc,,[SL: alarm],test
+balance,what are my coffers at,clinc,,[SL: balance],test
+balance,tell me the current balance of my bank accounts,clinc,,[SL: balance],test
+bill_balance,what do i owe to jcp,clinc,,[SL: bill_balance],test
+bill_balance,what is the amount due on my visa,clinc,,[SL: bill_balance],test
+book_flight,"book me a flight to jackson, mississippi from austin texas on american airlines",clinc,,[SL: book_flight],test
+book_flight,book me a place to chicago from atlanta united airlines,clinc,,[SL: book_flight],test
+book_hotel,i really need you to find me a hotel with good reviews in phoenix,clinc,,[SL: book_hotel],test
+book_hotel,i wanna book a place to stay in phoenix from the 5th to the 9th of march,clinc,,[SL: book_hotel],test
+calendar_update,i need to add something to my calendar for next tuesday,clinc,,[SL: calendar_update],test
+calendar_update,please clear my calendar,clinc,,[SL: calendar_update],test
+cancel_reservation,i do not actually need my reservation anymore,clinc,,[SL: cancel_reservation],test
+cancel_reservation,i need to cancel my reservation for rob at red robin,clinc,,[SL: cancel_reservation],test
+car_rental,i need to rent an suv in charlestown for the first week in june who do you suggest,clinc,,[SL: car_rental],test
+car_rental,find a decent rental care for next week at the philadelphia airport,clinc,,[SL: car_rental],test
+confirm_reservation,confirm my reservation for march 12 at 9:00 am,clinc,,[SL: confirm_reservation],test
+confirm_reservation,please confirm that i have a reservation for march 1st at 7,clinc,,[SL: confirm_reservation],test
+cook_time,how long to grill thick steaks,clinc,,[SL: cook_time],test
+cook_time,how long does pizza take,clinc,,[SL: cook_time],test
+exchange_rate,convert 200 us dollars to british pounds,clinc,,[SL: exchange_rate],test
+exchange_rate,how many japanese yen are in a us dollar,clinc,,[SL: exchange_rate],test
+food_last,how soon milk expires,clinc,,[SL: food_last],test
+food_last,when does milk will go bad,clinc,,[SL: food_last],test
+freeze_account,can you freeze my bank account,clinc,,[SL: freeze_account],test
+freeze_account,i want to freeze my bank account,clinc,,[SL: freeze_account],test
+ingredients_list,what food do you need to make lasagna,clinc,,[SL: ingredients_list],test
+ingredients_list,what ingredients do you need to make lasagna,clinc,,[SL: ingredients_list],test
+interest_rate,what's my bank of america account getting in interest,clinc,,[SL: interest_rate],test
+interest_rate,where do i see what interest my mortgage has,clinc,,[SL: interest_rate],test
+international_visa,are visas needed to travel to jamaica,clinc,,[SL: international_visa],test
+international_visa,do i need a visa for south korea,clinc,,[SL: international_visa],test
+make_call,i need to call my dad,clinc,,[SL: make_call],test
+make_call,i need to call my friend,clinc,,[SL: make_call],test
+meal_suggestion,what's a good italian meal,clinc,,[SL: meal_suggestion],test
+meal_suggestion,i'm looking for a meal that's from the asian cuisine,clinc,,[SL: meal_suggestion],test
+min_payment,i must pay verizon what minimum amount on my bill,clinc,,[SL: min_payment],test
+min_payment,what is the lowest amount i must pay on my verizon bill,clinc,,[SL: min_payment],test
+pay_bill,i have a car payment that needs to be paid,clinc,,[SL: pay_bill],test
+pay_bill,i need to put in a payment towards my phone bill,clinc,,[SL: pay_bill],test
+pin_change,i'm struggling to remind myself the pin number to my card,clinc,,[SL: pin_change],test
+pin_change,i'm having trouble remembering the pin number to my card,clinc,,[SL: pin_change],test
+play_music,play the song called baby shark,clinc,,[SL: play_music],test
+play_music,play the song called wreckless love,clinc,,[SL: play_music],test
+plug_type,would a socket converter be needed in france,clinc,,[SL: plug_type],test
+plug_type,how do i plug stuff in in france,clinc,,[SL: plug_type],test
+recipe,what do i need to do to cook a chicken,clinc,,[SL: recipe],test
+recipe,how do i go about cooking a 10lb turkey,clinc,,[SL: recipe],test
+restaurant_reservation,"i'd like to make a reservation at rooth chris, can you do that",clinc,,[SL: restaurant_reservation],test
+restaurant_reservation,make a reservation for chik-fil-a at 3 o' clock please,clinc,,[SL: restaurant_reservation],test
+restaurant_reviews,does applebees have good reviews,clinc,,[SL: restaurant_reviews],test
+restaurant_reviews,are the reviews ned get's good,clinc,,[SL: restaurant_reviews],test
+restaurant_suggestion,please give me the name of a few good options for places to eat dinner tonight,clinc,,[SL: restaurant_suggestion],test
+restaurant_suggestion,i need some suggestions for dinner places tonight,clinc,,[SL: restaurant_suggestion],test
+share_location,can i share my location with david,clinc,,[SL: share_location],test
+share_location,please send my location to kevin and also to lucy,clinc,,[SL: share_location],test
+shopping_list_update,tack on a gallon of milk to the grocery list,clinc,,[SL: shopping_list_update],test
+shopping_list_update,add laundry detergent to the list,clinc,,[SL: shopping_list_update],test
+spending_history,what's the total i've spent on shoes this month,clinc,,[SL: spending_history],test
+spending_history,how many dollars have i spent on coffee this month,clinc,,[SL: spending_history],test
+text,"text chrissy, i'm on my way",clinc,,[SL: text],test
+text,"text dave, i'll be there soon",clinc,,[SL: text],test
+time,i need you to tell me what time it is in new york now,clinc,,[SL: time],test
+time,"what time is it in adelaide, australia right now",clinc,,[SL: time],test
+timezone,what's the timezone for britain,clinc,,[SL: timezone],test
+timezone,i need the time zone for la,clinc,,[SL: timezone],test
+transactions,i need to know all my spending transactions,clinc,,[SL: transactions],test
+transactions,when did i last make a purchase,clinc,,[SL: transactions],test
+transfer,can you please provide me with assistance in moving money from one account to another,clinc,,[SL: transfer],test
+transfer,i would like help moving money between accounts,clinc,,[SL: transfer],test
+translate,how would you say fly in italian,clinc,,[SL: translate],test
+translate,what's the spanish word for pasta,clinc,,[SL: translate],test
+travel_notification,i will be traveling to lima alert my bank,clinc,,[SL: travel_notification],test
+travel_notification,assure my bank i really am going to california,clinc,,[SL: travel_notification],test
+travel_suggestion,what are some interesting things i can do while in raleigh,clinc,,[SL: travel_suggestion],test
+travel_suggestion,can you help me pick some fun things to do in london during my trip,clinc,,[SL: travel_suggestion],test
+update_playlist,add to my motivational playlist rap god,clinc,,[SL: update_playlist],test
+update_playlist,include rap god on the motivational playlist,clinc,,[SL: update_playlist],test
+weather,what is the weather,clinc,,[SL: weather],test
+weather,current weather,clinc,,[SL: weather],test

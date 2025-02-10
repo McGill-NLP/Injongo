@@ -52,3 +52,56 @@ python -m mlds.experiments.finetune clinc+extend seqc Davlan/afro-xlmr-large-76L
 python -m mlds.experiments.finetune clinc+extend seqc Davlan/afro-xlmr-large-76L --seed 2026 -e
 python -m mlds.experiments.finetune clinc+extend seqc Davlan/afro-xlmr-large-76L --seed 2027 -e
 python -m mlds.experiments.finetune clinc+extend seqc Davlan/afro-xlmr-large-76L --seed 2028 -e
+
+
+python -m mlds.experiments.finetune eng+1shot tokenc Davlan/afro-xlmr-large-76L --seed 2024
+python -m mlds.experiments.finetune eng+1shot tokenc Davlan/afro-xlmr-large-76L --seed 2025
+python -m mlds.experiments.finetune eng+1shot tokenc Davlan/afro-xlmr-large-76L --seed 2026
+python -m mlds.experiments.finetune eng+1shot tokenc Davlan/afro-xlmr-large-76L --seed 2027
+python -m mlds.experiments.finetune eng+1shot tokenc Davlan/afro-xlmr-large-76L --seed 2028
+
+python -m mlds.experiments.finetune eng+1shot seqc Davlan/afro-xlmr-large-76L --seed 2024
+python -m mlds.experiments.finetune eng+1shot seqc Davlan/afro-xlmr-large-76L --seed 2025
+python -m mlds.experiments.finetune eng+1shot seqc Davlan/afro-xlmr-large-76L --seed 2026
+python -m mlds.experiments.finetune eng+1shot seqc Davlan/afro-xlmr-large-76L --seed 2027
+python -m mlds.experiments.finetune eng+1shot seqc Davlan/afro-xlmr-large-76L --seed 2028
+
+for seed in 2024 2025 2026 2027 2028
+do
+    python -m mlds.experiments.finetune clinc_5shots seqc Davlan/afro-xlmr-large-76L --seed $seed -e
+done
+
+for seed in 2024 2025 2026 2027 2028
+do
+    python -m mlds.experiments.finetune clinc_10shots seqc Davlan/afro-xlmr-large-76L --seed $seed -e
+done
+
+for seed in 2024 2025 2026 2027 2028
+do
+    python -m mlds.experiments.finetune clinc_25shots seqc Davlan/afro-xlmr-large-76L --seed $seed -e
+done
+
+for seed in 2024 2025 2026 2027 2028
+do
+    python -m mlds.experiments.finetune clinc_50shots seqc Davlan/afro-xlmr-large-76L --seed $seed -e
+done
+
+for seed in 2024 2025 2026 2027 2028
+do
+    python -m mlds.experiments.finetune clinc_100shots seqc Davlan/afro-xlmr-large-76L --seed $seed -e
+done
+
+for seed in 2024 2025 2026 2027 2028
+do
+    python -m mlds.experiments.finetune eng_5shots seqc Davlan/afro-xlmr-large-76L --seed $seed -e
+done
+
+for seed in 2024 2025 2026 2027 2028
+do
+    python -m mlds.experiments.finetune eng_10shots seqc Davlan/afro-xlmr-large-76L --seed $seed -e
+done
+
+for seed in 2024 2025 2026 2027 2028
+do
+    python -m mlds.experiments.finetune eng_25shots seqc Davlan/afro-xlmr-large-76L --seed $seed -e
+done

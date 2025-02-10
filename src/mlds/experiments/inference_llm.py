@@ -53,8 +53,8 @@ def main():
     df = sm.load_data(args.language, split=args.split)
     df.index.name = "id"
 
-    print(f"{args.language} Loaded {len(df)} rows of data")
-    print(df.head())
+    # print(f"{args.language} Loaded {len(df)} rows of data")
+    # print(df.head())
 
     # Few Shot
     import random
@@ -62,22 +62,30 @@ def main():
     shuffled_intents = [i for i in INTENTS]
     random.shuffle(shuffled_intents)
     example_data = []
-    print(shuffled_intents)
+    # print(shuffled_intents)
     train_df = sm.load_data(args.language, split="train")
-
+    dev_df = sm.load_data(args.language, split="dev")
+    train_df = pd.concat([train_df, dev_df])
+    
     # seqc: shot_count = 40 intent
     # seqc: shot_count = 10 domain (5 shots)
     # slot: shot_count = 23 slot type
     # shot_count = 5 random
     train_df.fillna("", inplace=True)
     train_df = train_df[train_df["spans"] != ""]
+    
+    # print(len(train_df))
+    # spans must contain $$
+    # print(train_df["spans"])
+    # train_df = train_df[train_df["spans"].apply(lambda x: "," in x)]
 
-    if args.shot_count == 40:
+    if args.shot_count in [40, 80, 120, 160, 200]:
         for intent in INTENTS:
             line = train_df[train_df["intent"] == intent]
             line = line[line["text"] != ""]
-            line = line.iloc[0]
-            example_data.append({"intent": line["intent"], "text": line["text"], "slot": line["xtreme-up"]})
+            line = line.iloc[:args.shot_count//40]
+            for _, row in line.iterrows():
+                example_data.append({"intent": row["intent"], "text": row["text"], "slot": row["xtreme-up"]})
     elif args.shot_count == 10:
         print(len(train_df["domain"].unique()), train_df["domain"].unique())
         for domain in train_df["domain"].unique():
@@ -85,20 +93,57 @@ def main():
             line = line[line["text"] != ""]
             line = line.iloc[0]
             example_data.append({"intent": line["intent"], "text": line["text"], "slot": line["xtreme-up"]})
-    elif args.shot_count == 23:
+    elif args.shot_count in [23, 46, 69, 92, 115]:
         # select first entity covers 23 slot types
-        existed_slots = set()
+
+        unique_slots = []
         for _, line in train_df.iterrows():
-            # 17:27:SL:MONEY,36:51:SL:BANK_NAME
             if isinstance(line["spans"], float):
                 continue
             slots = [slot.split(":")[-1] for slot in line["spans"].split(",")]
-            for slot in slots:
-                if slot not in existed_slots:
-                    example_data.append({"intent": line["intent"], "text": line["text"], "slot": line["xtreme-up"]})
-                    existed_slots |= set(slots)
-                    break
-            if len(existed_slots) >= 23:
+            unique_slots.extend(slots)
+        # else:
+            # print("Not enough slots")
+            # print("Missing slots", set(SLOTS_MERGED) - set(unique_slots))
+            # # exit()
+            # from collections import Counter
+            # print(Counter(unique_slots))
+            # pass
+        
+        unique_slots_set = set(unique_slots)
+        existed_slots = set()
+        text_set = set()
+        count = 0
+        for _ in range(args.shot_count // 23):
+            for _, line in train_df.iterrows():
+                # 17:27:SL:MONEY,36:51:SL:BANK_NAME
+                if isinstance(line["spans"], float):
+                    continue
+                slots = [slot.split(":")[-1] for slot in line["spans"].split(",")]
+                for slot in slots:
+                    if slot not in existed_slots and line["text"] not in text_set:
+                        example_data.append({"intent": line["intent"], "text": line["text"], "slot": line["xtreme-up"]})
+                        existed_slots |= set(slots)
+                        text_set.add(line["text"])
+                        break
+
+                if len(existed_slots) >= len(unique_slots_set):
+                    count += 1
+                    existed_slots = set()
+                    if count >= (args.shot_count // 23):
+                        break
+
+            if args.language == "hau":
+                unique_slots_set = set()
+                for _, line in train_df.iterrows():
+                    if isinstance(line["spans"], float):
+                        continue
+                    slots = [slot.split(":")[-1] for slot in line["spans"].split(",")]
+                    if line["text"] in text_set:
+                        continue
+                    unique_slots_set |= set(slots)
+  
+            if count >= 5:
                 break
     else:
         for intent in shuffled_intents[:args.shot_count]:
@@ -106,6 +151,14 @@ def main():
             line = line[line["xtreme-up"] != ""]
             line = line.iloc[0]
             example_data.append({"intent": line["intent"], "text": line["text"], "slot": line["xtreme-up"]})
+
+    if len(example_data) < args.shot_count//3*2:
+        print(f"Example data: {len(example_data)}")
+        print(example_data)
+        exit()
+
+    print(f"Example data: {len(example_data)}")
+    # exit()
     # print(example_data)
     pm.add_language_example(LANGUAGES_MAPPER[args.language], example_data)
 
@@ -284,11 +337,11 @@ def process_row(
         processed_output = prompt_manager.process_output(raw_output, "raw")
 
     else:
-        @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+        @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(10))
         def chatcompletion_with_backoff(**kwargs):
             return client.chat.completions.create(**kwargs)
 
-        @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+        @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(10))
         def completion_with_backoff(**kwargs):
             return client.completions.create(**kwargs)
 
@@ -313,6 +366,7 @@ def process_row(
             print(f"Error processing row {idx}: {str(e)}")
             raw_output = ""
             exit(1)
+            raise e
 
         if not raw_output:
             raw_output = ""

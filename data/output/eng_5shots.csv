@@ -1,0 +1,321 @@
+intent,text,domain,spans,logical_form,split
+alarm,set an alarm for my tutorial at 5.00pm ,eng,,[SL: alarm],dev
+balance,is there enough money on my M-pesa account to buy the toy worth Ksh. 2000?,eng,,[SL: balance],dev
+bill_balance,How much is the bill altogether?,eng,,[SL: bill_balance],dev
+book_flight,Which airline can I book for my trip to Lagos on the 2nd of March,eng,,[SL: book_flight],dev
+book_hotel,book me the nearest hotel to Murtala Muhammed international airport,eng,,[SL: book_hotel],dev
+calendar_update,add family celebration to my calendar for the 10th of March.,eng,,[SL: calendar_update],dev
+cancel_reservation,please cancel my 6.00pm reservation at Sweet Sensation,eng,,[SL: cancel_reservation],dev
+car_rental,rent a car  for my trip from Murtala Muhammed airport to Ibadan.,eng,,[SL: car_rental],dev
+confirm_reservation,Would you please confirm that I have a reservation for dinner at the Hotel Elile?,eng,,[SL: confirm_reservation],dev
+cook_time,How long does it take to make Àkàrà?,eng,,[SL: cook_time],dev
+exchange_rate,How much Naira will I get for $100?,eng,,[SL: exchange_rate],dev
+food_last,can Nigerian meat-pie last for a week in the fridge compartment?,eng,,[SL: food_last],dev
+freeze_account,lock my nmb account for 3 days  i have noticed unusual activity,eng,,[SL: freeze_account],dev
+ingredients_list,what are the  essential ingredients needed in making tasty pepper-soup?,eng,,[SL: ingredients_list],dev
+interest_rate,What is the interest rate on a #5 million loan,eng,,[SL: interest_rate],dev
+international_visa,how long does a USA visa application  from Nigeria take?,eng,,[SL: international_visa],dev
+make_call,Can you put a call through to Adé?,eng,,[SL: make_call],dev
+meal_suggestion,What other meal can I make from beans aside moinmoin?,eng,,[SL: meal_suggestion],dev
+min_payment,How much is the minimum deposit for the shoe,eng,,[SL: min_payment],dev
+pay_bill,please debit ₦5000 monthly from my GTB account to pay my electricity bill.,eng,,[SL: pay_bill],dev
+pin_change,how do I change my First bank debit card pin?,eng,,[SL: pin_change],dev
+play_music,play Nathaniel Bassey newest song.,eng,,[SL: play_music],dev
+plug_type,do Nigeria and Canada have similar plug-type? ,eng,,[SL: plug_type],dev
+recipe,where can I get home-made Suya recipe?,eng,,[SL: recipe],dev
+restaurant_reservation,can you  reserve table for two at Tanga Beach hotel for friday night,eng,,[SL: restaurant_reservation],dev
+restaurant_reviews,Give a solid 5-star to Amala Skye in the review.,eng,,[SL: restaurant_reviews],dev
+restaurant_suggestion,Which restaurants are popular in Ogun state?,eng,,[SL: restaurant_suggestion],dev
+share_location,"share the location of the wedding party, please ",eng,,[SL: share_location],dev
+shopping_list_update,could you add injera to my current shopping list,eng,,[SL: shopping_list_update],dev
+spending_history,how much did I spend last month on my Iroko TV subscription?,eng,,[SL: spending_history],dev
+text,send an automated text message to all the lecturers in the department.,eng,,[SL: text],dev
+time,what time is it in Addis Ababa,eng,,[SL: time],dev
+timezone,what time will it be in jamaica  if south Africa is 4pm now?,eng,,[SL: timezone],dev
+transactions,How much money is left in my Momo account?,eng,,[SL: transactions],dev
+transfer,Transfer 6000 thousand from  my Tigo pesa accoun to my sportpesa account,eng,,[SL: transfer],dev
+translate,"In Kinyarwanda, how do we call people who go to visit attractive places?",eng,,[SL: translate],dev
+travel_notification,set a two days notification for my trip to Ibadan ,eng,,[SL: travel_notification],dev
+travel_suggestion,are there any tourist attractions in Abeokuta?,eng,,[SL: travel_suggestion],dev
+update_playlist,add more gospel songs to my playlist ,eng,,[SL: update_playlist],dev
+weather,Is the weather going to be clear of rain tomorrow?,eng,,[SL: weather],dev
+alarm,Please set my alarm for 6am every monday morning,eng,,[SL: alarm],test
+alarm,Please update my alarm to 04:00 in the morning I have an early flight,eng,,[SL: alarm],test
+balance,Will my account balance show on the Gtbank statment of account,eng,,[SL: balance],test
+balance,I'd like to know the balance of my credit card.,eng,,[SL: balance],test
+bill_balance,how much is left to pay for my water bill?,eng,,[SL: bill_balance],test
+bill_balance,What is my balance after paying for my DSTV bill?,eng,,[SL: bill_balance],test
+book_flight,"Can you book me a return flight from London to Lagos, Nigeria tonight?",eng,,[SL: book_flight],test
+book_flight,What flights can I get from East London to George for a budget of less than R2500?,eng,,[SL: book_flight],test
+book_hotel,Can you book me a luxury suite at Eko Hotel from 10th to 15th next month?,eng,,[SL: book_hotel],test
+book_hotel,suggest a hotel for two adults and two kids for the Easter weekend,eng,,[SL: book_hotel],test
+calendar_update,What meeting do we have on the calender next week thursday,eng,,[SL: calendar_update],test
+calendar_update,Please add 21 March on my calander for a family gathering,eng,,[SL: calendar_update],test
+cancel_reservation,How can I cancel my reservation at landmark beach in Elegushi,eng,,[SL: cancel_reservation],test
+cancel_reservation,Cancel my dinner reservation at the karaoke bar,eng,,[SL: cancel_reservation],test
+car_rental,How can I rent out my BMW sport car,eng,,[SL: car_rental],test
+car_rental,how much does it cost to rent a Hyundai i20 in Ceza?,eng,,[SL: car_rental],test
+confirm_reservation,Can you confirm if my booking for table of 2 for Amala at Embasy canteen was successful,eng,,[SL: confirm_reservation],test
+confirm_reservation,Can you confirm my reservation for 6pm?,eng,,[SL: confirm_reservation],test
+cook_time,what is the cook-time for Jollof rice?,eng,,[SL: cook_time],test
+cook_time,how many minutes does it take you to make noodles?,eng,,[SL: cook_time],test
+exchange_rate,How much is 2000 naira in pounds,eng,,[SL: exchange_rate],test
+exchange_rate,How much is the rand to the dollar?,eng,,[SL: exchange_rate],test
+food_last,Can the Rice stay in the fridge for 5 days,eng,,[SL: food_last],test
+food_last,how long does bread remain fresh before it's stale?,eng,,[SL: food_last],test
+freeze_account,I would like to freeze my Wema bank current account.,eng,,[SL: freeze_account],test
+freeze_account,Can you help me temporarily freeze my credit card?,eng,,[SL: freeze_account],test
+ingredients_list,Where is the Jollof rice  ingredent list,eng,,[SL: ingredients_list],test
+ingredients_list,What do I need to make amaginya?,eng,,[SL: ingredients_list],test
+interest_rate,what is the interest rate on Zenith bank current account?,eng,,[SL: interest_rate],test
+interest_rate,does Nedbank give you a 10% interest rate if you invest your money for more than 12 months?,eng,,[SL: interest_rate],test
+international_visa,How can I process my US Visa from Nigeriia,eng,,[SL: international_visa],test
+international_visa,which countries can a south african travel to without a visa?,eng,,[SL: international_visa],test
+make_call,call my landlord at 6.00pm,eng,,[SL: make_call],test
+make_call,please call mom so I can tell her I need money for food.,eng,,[SL: make_call],test
+meal_suggestion,Can you suggest where I can eat the best Pounded Yam in Osogbo,eng,,[SL: meal_suggestion],test
+meal_suggestion,suggest a vegan restaurant in Westville,eng,,[SL: meal_suggestion],test
+min_payment,What is the minimum amount I can pay for the electricity bill?,eng,,[SL: min_payment],test
+min_payment,how much is the minimum amount for data on the Capitec bank app?,eng,,[SL: min_payment],test
+pay_bill,Use my Gtbank account to pay for mtn 200 airtime ,eng,,[SL: pay_bill],test
+pay_bill,please pay R750 for the electricity bill.,eng,,[SL: pay_bill],test
+pin_change,Can I change my Gtbank ATM card pin ,eng,,[SL: pin_change],test
+pin_change,how can I change my FNB app password?,eng,,[SL: pin_change],test
+play_music,Can you play me some Beautiful Nubia songs,eng,,[SL: play_music],test
+play_music,Play the latest Punk Rock tunes,eng,,[SL: play_music],test
+plug_type,"What is the Plug type used in Nigeria, is it type A?",eng,,[SL: plug_type],test
+plug_type,Where can I get a type C charger in Durban?,eng,,[SL: plug_type],test
+recipe,What recipe do you use for your jollof rice?,eng,,[SL: recipe],test
+recipe,I need an easy to follow recipe for cooking malva pudding,eng,,[SL: recipe],test
+restaurant_reservation,How do I book table for 2 at Chicken republic for my friends and family ,eng,,[SL: restaurant_reservation],test
+restaurant_reservation,Do you have any availability for dinner tonight at 6pm?,eng,,[SL: restaurant_reservation],test
+restaurant_reviews,Is Amala Skye a good resturant ,eng,,[SL: restaurant_reviews],test
+restaurant_reviews,what are customers saying about KFC West Street,eng,,[SL: restaurant_reviews],test
+restaurant_suggestion,Which resturant sell the best Amala in Osogbo,eng,,[SL: restaurant_suggestion],test
+restaurant_suggestion,which restaurant can I find which serves good food in Durban?,eng,,[SL: restaurant_suggestion],test
+share_location,Can you share my location on the group chat?,eng,,[SL: share_location],test
+share_location,can you share my current location to Ndalo,eng,,[SL: share_location],test
+shopping_list_update,Can you reduce the quantity of rice in my shopping list to 50kg instead of 100kg?,eng,,[SL: shopping_list_update],test
+shopping_list_update,Update my shopping list with eggs and cheese,eng,,[SL: shopping_list_update],test
+spending_history,How much did I spend on palm wine last month,eng,,[SL: spending_history],test
+spending_history,how do I set my spending limits on my FNB app?,eng,,[SL: spending_history],test
+text,Can you ask Tunde if he will like Amala for dinner,eng,,[SL: text],test
+text,Notify Sindi that I have arrived by text.,eng,,[SL: text],test
+time,what is the time difference between Abuja and Cape Town? ,eng,,[SL: time],test
+time,What's the time difference between Los Angeles and South Africa?,eng,,[SL: time],test
+timezone,Does China share the same time zone with Korea?,eng,,[SL: timezone],test
+timezone,What is the current time in Egypt?,eng,,[SL: timezone],test
+transactions,how do I resolve a failed transaction on my GTB account? ,eng,,[SL: transactions],test
+transactions,I'd like to see my bank statement to review my transaction history.,eng,,[SL: transactions],test
+transfer,Process a transfer of ₦1000 from my Palmpay account to my Kuda account.,eng,,[SL: transfer],test
+transfer,Can you help me with a transfer on my App from Capitec to another bank?,eng,,[SL: transfer],test
+translate,how do I say thank you to a driver who speaks Yoruba language?,eng,,[SL: translate],test
+translate,"How do you say ""thank you"" in Tshivenda?",eng,,[SL: translate],test
+travel_notification,Kindly note my travel schedule on my calendar,eng,,[SL: travel_notification],test
+travel_notification,can you increase my limit to R10000 on my Nedbank app as I'm traveling overseas.,eng,,[SL: travel_notification],test
+travel_suggestion,Is there a pub where I can drink cold beer in Abeokuta,eng,,[SL: travel_suggestion],test
+travel_suggestion,What activities does the Table Mountain in Cape Town offer?,eng,,[SL: travel_suggestion],test
+update_playlist,Remove Naira Marley's songs from my playlist,eng,,[SL: update_playlist],test
+update_playlist,please add Britney Spears - Baby One More Time album to my favourites list,eng,,[SL: update_playlist],test
+weather,what are the chances of rain in Abuja tomorrow?,eng,,[SL: weather],test
+weather,What will the weather be like in Gqeberha this week?,eng,,[SL: weather],test
+alarm,Set an alarm for tomorrow morning to wake me up for my exam,eng,,[SL: alarm],train
+alarm,wake me up tomorrow at 8:00 so i can take my medicin.,eng,,[SL: alarm],train
+alarm,Set the clock to exactly four!,eng,,[SL: alarm],train
+alarm,Set the left time on your phone,eng,,[SL: alarm],train
+alarm,Please set the clock alarm for 6:00 am tomorrow,eng,,[SL: alarm],train
+balance,Would you please put some money in my Awash Bank savings account?,eng,,[SL: balance],train
+balance,check and tell me how much money I have on my bank account.,eng,,[SL: balance],train
+balance,How much do I have left on my UTB account ?,eng,,[SL: balance],train
+balance,what is the balance of my deposit account ?,eng,,[SL: balance],train
+balance,Will my GT bank account balance be enough to pay my house rent,eng,,[SL: balance],train
+bill_balance,can you let me know the current amount I owe for my water and electricity bills?,eng,,[SL: bill_balance],train
+bill_balance,how much is September's water bill payment?,eng,,[SL: bill_balance],train
+bill_balance,How much does it take to pay the QMAX electricity bill?,eng,,[SL: bill_balance],train
+bill_balance,How much does the CEET bill amount to ?,eng,,[SL: bill_balance],train
+bill_balance,What is the balance for the water bill for this month?,eng,,[SL: bill_balance],train
+book_flight,can you help me find the best flights to Austria with direct routes,eng,,[SL: book_flight],train
+book_flight,How much does it cost to travel from Addis Ababa to hawassa?,eng,,[SL: book_flight],train
+book_flight,Can you book a Lomé-Niamtougou flight for me please ?,eng,,[SL: book_flight],train
+book_flight,Book me an air flight ticket from Lome to Niamtogou on next Monday,eng,,[SL: book_flight],train
+book_flight,buy me a flight ticket from kano to lagos on march 1st,eng,,[SL: book_flight],train
+book_hotel,"On October 24, I wanted to book a VIP room at the Lalibela Hotel",eng,,[SL: book_hotel],train
+book_hotel,find me a hotel in Arbaminch with a bed available near Nechisar Park for the dates September 1 to 10.,eng,,[SL: book_hotel],train
+book_hotel,How much does a room at the Millenium Hotel cost ?,eng,,[SL: book_hotel],train
+book_hotel,Can you find a hotel not far from Akodessewa?,eng,,[SL: book_hotel],train
+book_hotel,Please find me a hotel in wuse 2 Abuja,eng,,[SL: book_hotel],train
+calendar_update,Mark my flight date on my calendar.,eng,,[SL: calendar_update],train
+calendar_update,Add abiy fasting days on my calandar.,eng,,[SL: calendar_update],train
+calendar_update,Inform the children that the party is postponed to the next week! 08/03/2024,eng,,[SL: calendar_update],train
+calendar_update,Arrange an appointment with the new supplier at the end of our meeting,eng,,[SL: calendar_update],train
+calendar_update,Could you change the meeting time to 5:00pm tomorrow,eng,,[SL: calendar_update],train
+cancel_reservation,"The meeting was canceled, so please remove my reservation for the meeting hall.",eng,,[SL: cancel_reservation],train
+cancel_reservation,cancel the dinner I scheduled yesterday at elile hotel.,eng,,[SL: cancel_reservation],train
+cancel_reservation,Tell the good bread saleswoman to cancel our Thursday reservation !,eng,,[SL: cancel_reservation],train
+cancel_reservation,We decided not to go out for the restaurant tonight,eng,,[SL: cancel_reservation],train
+cancel_reservation,cancel my restuarant reservation for 5pm,eng,,[SL: cancel_reservation],train
+car_rental,i have Planning a car rental from Addis Ababa to Arba Minch. Can you provide information on availability and pricing?,eng,,[SL: car_rental],train
+car_rental,is there a car rental company in Arbaminch?,eng,,[SL: car_rental],train
+car_rental,Where can we find a good bus tent for the school excursion for the day ?,eng,,[SL: car_rental],train
+car_rental,How can I rent car in Egypt?,eng,,[SL: car_rental],train
+car_rental,help me find a rental car in Tarauni,eng,,[SL: car_rental],train
+confirm_reservation,can you check and ensure that my vip reservation at tayetu Hotel for Bereket is still valid,eng,,[SL: confirm_reservation],train
+confirm_reservation,Confirms the turkey croupion seller that we will redeem our reservation of a pound and a half tonight!,eng,,[SL: confirm_reservation],train
+confirm_reservation,Make sure they reserve the place for us in the restaurant,eng,,[SL: confirm_reservation],train
+confirm_reservation,can you confirm that i have a reservation at Larai's restuarant?,eng,,[SL: confirm_reservation],train
+confirm_reservation,Please check if Ten-Ten resturant have reserved table 10 for me,eng,,[SL: confirm_reservation],train
+cook_time,What is the approximate cooking time for Chicken stew,eng,,[SL: cook_time],train
+cook_time,how long does it take for shiro to be fully cooked.,eng,,[SL: cook_time],train
+cook_time,How long can it take to pound the fufu?,eng,,[SL: cook_time],train
+cook_time,Do you thing the koŋu will cook fast,eng,,[SL: cook_time],train
+cook_time,Can I cook jollof rice in 10 minutes,eng,,[SL: cook_time],train
+exchange_rate,"how much is a dollar worth in Ethiopian Birr?""",eng,,[SL: exchange_rate],train
+exchange_rate,what is the current of one euro to Ethiopian birr,eng,,[SL: exchange_rate],train
+exchange_rate,Where can I exchange CFA for cedis ? ,eng,,[SL: exchange_rate],train
+exchange_rate,How much is 1 Naira in Togo franc,eng,,[SL: exchange_rate],train
+exchange_rate,How much is dollar exchange rate today in Nigeria,eng,,[SL: exchange_rate],train
+food_last,How many days is it safe to store Chicken stew in the fridge?,eng,,[SL: food_last],train
+food_last,How long can doro wot stay fresh?,eng,,[SL: food_last],train
+food_last,Does blended rice seem to spoil faster ?,eng,,[SL: food_last],train
+food_last,Can I eat the omelette I made three days ago,eng,,[SL: food_last],train
+food_last,When will my okro soup spoil?,eng,,[SL: food_last],train
+freeze_account,Can you stop all transactions to my CBE account?,eng,,[SL: freeze_account],train
+freeze_account,why is it saying that my CBE account is frozen?,eng,,[SL: freeze_account],train
+freeze_account,Has  the bank frozen my account ?,eng,,[SL: freeze_account],train
+freeze_account,Do you want me to close my bank account with you ?,eng,,[SL: freeze_account],train
+freeze_account,I need you to close my GT bank account,eng,,[SL: freeze_account],train
+ingredients_list,list the items required for preparing a Porridge,eng,,[SL: ingredients_list],train
+ingredients_list,from which spices is berbere made of?,eng,,[SL: ingredients_list],train
+ingredients_list,What are the ingredients for peanut sauce?,eng,,[SL: ingredients_list],train
+ingredients_list,What are the ingredients necessary to cook the gboma soup ?,eng,,[SL: ingredients_list],train
+ingredients_list,What ingredients do I need to cook Nigerian jollof rice,eng,,[SL: ingredients_list],train
+interest_rate,Can I find out the amount of interest I got in my buna bank account?,eng,,[SL: interest_rate],train
+interest_rate,what is the saving interest of birhan bank?,eng,,[SL: interest_rate],train
+interest_rate,"What interest Orabank takes on a loan of 500,000F",eng,,[SL: interest_rate],train
+interest_rate,What is the interest rate for the money on my courrant account,eng,,[SL: interest_rate],train
+interest_rate,How much is the interest rate on my GT bank account this year?,eng,,[SL: interest_rate],train
+international_visa,can you check if I need an international visa for a trip to Dubai?,eng,,[SL: international_visa],train
+international_visa,is visa required to travel to Kenya from Ethiopia?,eng,,[SL: international_visa],train
+international_visa,How much for the Gabon visa ?,eng,,[SL: international_visa],train
+international_visa,Do togoleses need a visa to Russia,eng,,[SL: international_visa],train
+international_visa,How much does it cost to apply for a visa to England?,eng,,[SL: international_visa],train
+make_call,Can you call Mr. Kebede for me?,eng,,[SL: make_call],train
+make_call,make a call to my mother,eng,,[SL: make_call],train
+make_call,Can I call my brother who is in Kpalimé ?,eng,,[SL: make_call],train
+make_call,Call our dad because he is looking for you,eng,,[SL: make_call],train
+make_call,Please can I use your phone to call my wife,eng,,[SL: make_call],train
+meal_suggestion,What's the best Ethiopian dish to try for an authentic taste of Ethiopian cuisine?,eng,,[SL: meal_suggestion],train
+meal_suggestion,recommend me foods I should try when I go to oromia?,eng,,[SL: meal_suggestion],train
+meal_suggestion,Do you have something not too heavy to recommend in your menu ?,eng,,[SL: meal_suggestion],train
+meal_suggestion,Which specific food can I find in your country,eng,,[SL: meal_suggestion],train
+meal_suggestion,can you recommend me food from Maiduguri,eng,,[SL: meal_suggestion],train
+min_payment,What did I pay the lowest for service fee?,eng,,[SL: min_payment],train
+min_payment,can you provide information on the minimum payment due for my house loan today?,eng,,[SL: min_payment],train
+min_payment,Orders SUNU bank to pay the TDE and CEET invoices for this month,eng,,[SL: min_payment],train
+min_payment,Which is the minimal amount we can pay by Flooz money,eng,,[SL: min_payment],train
+min_payment,Please tell me the minimum I can pay on interest for my water bill?,eng,,[SL: min_payment],train
+pay_bill,i want pay my childeren school pay in Abyssinia bank. Can you guide me through the payment process?,eng,,[SL: pay_bill],train
+pay_bill,Can i pay my electric bill with my phone?,eng,,[SL: pay_bill],train
+pay_bill,Check my Flooz account to see if we could pay the TDE bill!,eng,,[SL: pay_bill],train
+pay_bill,Can I pay electricity bill by Tmoney,eng,,[SL: pay_bill],train
+pay_bill,where can i pay my electricity bill?,eng,,[SL: pay_bill],train
+pin_change,provide step-by-step instructions to me on changing the PIN for my COMMERCIAL BANK OF ETHIOPIA account.,eng,,[SL: pin_change],train
+pin_change,what should I do to change my Abyssinian bank account password?,eng,,[SL: pin_change],train
+pin_change,How do I change my bank account pin code?,eng,,[SL: pin_change],train
+pin_change,Where can I change my account's password ?,eng,,[SL: pin_change],train
+pin_change,How do I change my ATM pin,eng,,[SL: pin_change],train
+play_music,Would you please open Tilahune gesese's old song for me?,eng,,[SL: play_music],train
+play_music,open ambasel scale songs.,eng,,[SL: play_music],train
+play_music,Can you play agbadza music for us?,eng,,[SL: play_music],train
+play_music,Please play the new agbadza music for me,eng,,[SL: play_music],train
+play_music,Please turn on Namenj's song,eng,,[SL: play_music],train
+plug_type,Can I get American plug in Uganda?,eng,,[SL: plug_type],train
+plug_type,which type of socket is commonly used in Ethiopia? ,eng,,[SL: plug_type],train
+plug_type,What plug type is used in England?,eng,,[SL: plug_type],train
+plug_type,which CEET branch do you go to for the outages ?,eng,,[SL: plug_type],train
+plug_type,Is a different type of socket plug needed in Nigeria?,eng,,[SL: plug_type],train
+recipe,What are the ingredients needed to make genfo?,eng,,[SL: recipe],train
+recipe,what do i need to make injera?,eng,,[SL: recipe],train
+recipe,Do you know how to knead Egbo dough ?,eng,,[SL: recipe],train
+recipe,Please show me beancake recipe,eng,,[SL: recipe],train
+recipe,find us 5 rice recipes,eng,,[SL: recipe],train
+restaurant_reservation,please reserve a VIP table at Taitu Restaurant for tomorrow afternoon,eng,,[SL: restaurant_reservation],train
+restaurant_reservation,call ras hotel and reserve for september 1.,eng,,[SL: restaurant_reservation],train
+restaurant_reservation,Can you make a reservation in this restaurant in Adidogomé ?,eng,,[SL: restaurant_reservation],train
+restaurant_reservation,Don't forget to reserve places for I and my friends tomorrow evening in the restaurant,eng,,[SL: restaurant_reservation],train
+restaurant_reservation,Can you reserve 10 tables at Season 7 for our guest,eng,,[SL: restaurant_reservation],train
+restaurant_reviews,do many people love Azmera Shiro?,eng,,[SL: restaurant_reviews],train
+restaurant_reviews,find and tell me best resturant that prepare Ethiopian cuisine in Addis Ababa.,eng,,[SL: restaurant_reviews],train
+restaurant_reviews,Is Ankou's restaurant has a good reputation?,eng,,[SL: restaurant_reviews],train
+restaurant_reviews,Was the donut well made ?,eng,,[SL: restaurant_reviews],train
+restaurant_reviews,Did our guests enjoyed the jollof rice from Hadiza Balangu's resturant,eng,,[SL: restaurant_reviews],train
+restaurant_suggestion,Can you suggest best ethiopian restaurant for me to eat lunch?,eng,,[SL: restaurant_suggestion],train
+restaurant_suggestion,Suggest me a good restaurant that make Kitfo?,eng,,[SL: restaurant_suggestion],train
+restaurant_suggestion,"Please, recommend a restaurant where we can go out to eat tonight",eng,,[SL: restaurant_suggestion],train
+restaurant_suggestion,Where can we eat fufu ?,eng,,[SL: restaurant_suggestion],train
+restaurant_suggestion,Which resturant is the best around here,eng,,[SL: restaurant_suggestion],train
+share_location,Please send the address of the hotel where I was staying to my lawyer,eng,,[SL: share_location],train
+share_location,can you help me send my current location to my friends?,eng,,[SL: share_location],train
+share_location,Can you share my location with the Gozem driver please ?,eng,,[SL: share_location],train
+share_location,Tell the guests that I'll share my location with him,eng,,[SL: share_location],train
+share_location,Tell Aisha I am at our elder sister's house,eng,,[SL: share_location],train
+shopping_list_update,add teff to my grocery list.,eng,,[SL: shopping_list_update],train
+shopping_list_update,Add agbeli to my shopping list,eng,,[SL: shopping_list_update],train
+shopping_list_update,Add okro to my shopping list,eng,,[SL: shopping_list_update],train
+shopping_list_update,Please remove meat from the shopping list,eng,,[SL: shopping_list_update],train
+shopping_list_update,Please add sugar in the list of items to buy,eng,,[SL: shopping_list_update],train
+spending_history,How much money did I spend on visiting Bale mountains last month?,eng,,[SL: spending_history],train
+spending_history,Show me history of my telebirr transfers ?,eng,,[SL: spending_history],train
+spending_history,What are the different purchases made by the withdrawn fund at BSIC?,eng,,[SL: spending_history],train
+spending_history,How much have I spent on my account ? ,eng,,[SL: spending_history],train
+spending_history,how much did i spend on rice this week?,eng,,[SL: spending_history],train
+text,Text mom to ask what she wants to buy for the Easter holiday?,eng,,[SL: text],train
+text,Send a text for Robel that I'm on my way to his home.,eng,,[SL: text],train
+text,Have you texted everyone that the meeting is happening?,eng,,[SL: text],train
+text,text an sms to your son and inform him about tomorrow meeting,eng,,[SL: text],train
+text,"Send Sani a text, I'll talk to him tonight",eng,,[SL: text],train
+time,what time is it in Ethiopia?,eng,,[SL: time],train
+time,How much time would you need for construction ?,eng,,[SL: time],train
+time,At what time will you come?,eng,,[SL: time],train
+time,What time is it in Jigawa state now?,eng,,[SL: time],train
+time,What time will you come,eng,,[SL: time],train
+timezone,Can you provide the time zone information for Kenya?,eng,,[SL: timezone],train
+timezone,what is the time difference between Addis Ababa and Dubai?,eng,,[SL: timezone],train
+timezone,Are all african countries in the same timezone ?,eng,,[SL: timezone],train
+timezone,check if Togo and Benin are in the same timezone,eng,,[SL: timezone],train
+timezone,Is there any difference between African and American timezone,eng,,[SL: timezone],train
+transactions,What do I need to complete in advance to make a payment using Telebirr?,eng,,[SL: transactions],train
+transactions,what other option can i use to make this payment?,eng,,[SL: transactions],train
+transactions,Did the corn buyer pay me through Tmoney ?,eng,,[SL: transactions],train
+transactions,give me my account statement,eng,,[SL: transactions],train
+transactions,Can I check all my last month's transaction history through the Access bank application,eng,,[SL: transactions],train
+transfer,Can you transfer 50000 birr from my commercial Bank account to cbe birr wallet?,eng,,[SL: transfer],train
+transfer,can you transfer of 500 Birr from my CBE to my mother's Abyssinia Bank?,eng,,[SL: transfer],train
+transfer,Instruct Ecobank to transfer the salaries of all employees to their home banks by March 25,eng,,[SL: transfer],train
+transfer,I want you to send him 5000 F by Ecobank,eng,,[SL: transfer],train
+transfer,"please transfer N10,000 to my GT bank",eng,,[SL: transfer],train
+translate,"how do I say ""I want to use the bus"" in Oromo language?",eng,,[SL: translate],train
+translate,"How do I say ""water"" in Tigrigna?",eng,,[SL: translate],train
+translate,How do you welcome someone in Temberma ?,eng,,[SL: translate],train
+translate,"How can I say ""give me water'' in Bassar language, ncam ?",eng,,[SL: translate],train
+translate,"what is the equivalent of, 'life is good' in fulani?",eng,,[SL: translate],train
+travel_notification,"Next Monday, I'll be heading to Tigray for two weeks",eng,,[SL: travel_notification],train
+travel_notification,Please create a notification to let my mom know about my trip. I'll be in Hawassa from September 1 to September 10,eng,,[SL: travel_notification],train
+travel_notification,Tell Komigan I am traveling to Dzarakpanga for two weeks!,eng,,[SL: travel_notification],train
+travel_notification,Notify my bank that I will travel to Tandjouaré next week,eng,,[SL: travel_notification],train
+travel_notification,Can you inform my bank that I will be in Sudan from March 1st to March 15th?,eng,,[SL: travel_notification],train
+travel_suggestion,Can you point me to what I should see on my visit to the Bahirdar?,eng,,[SL: travel_suggestion],train
+travel_suggestion,help me decide between Hawassa and Arbaminch for my upcoming trip. What are the unique attractions in each location?,eng,,[SL: travel_suggestion],train
+travel_suggestion,Would it be easier to go through Tsévié before going to Hahotoe ?,eng,,[SL: travel_suggestion],train
+travel_suggestion,"Which good thing are there in Sokode, the place we are going to",eng,,[SL: travel_suggestion],train
+travel_suggestion,Where will I spend Ramadan this year?,eng,,[SL: travel_suggestion],train
+update_playlist,Add the new album of Tekeset Getnet to the list of songs i listen to every day.,eng,,[SL: update_playlist],train
+update_playlist,I'm in the mood for listen new music; could you insert new music's to my playlist?,eng,,[SL: update_playlist],train
+update_playlist,Ask him to add this agbadja song to the old ones !,eng,,[SL: update_playlist],train
+update_playlist,Tell the DJ that new bɔbɔbɔ songs are out this week,eng,,[SL: update_playlist],train
+update_playlist,add this song to my workout playlist,eng,,[SL: update_playlist],train
+weather,what is the latest weather update in Addis Ababa at this moment,eng,,[SL: weather],train
+weather,will it be raining tonight in Dessie?,eng,,[SL: weather],train
+weather,Will the weather clear tomorrow?,eng,,[SL: weather],train
+weather,How is the heat these days in Atakpamé ?,eng,,[SL: weather],train
+weather,tell me the weather forecast for this coming thursday,eng,,[SL: weather],train

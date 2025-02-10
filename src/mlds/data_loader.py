@@ -695,7 +695,7 @@ import re
 class SlotDataManager:
     def __init__(self, data_folder="./data/output") -> None:
         self.data = {}
-        self.languages = LANGUAGES + ["eng", "clinc", "clinc+extend"] + [lang+"_eng" for lang in LANGUAGES]
+        self.languages = LANGUAGES + ["eng", "clinc", "clinc+extend", "eng+40shots", "eng+23shots"] + [lang+"_eng" for lang in LANGUAGES]
         # self.languages_mapper = LANGUAGES_MAPPER | {"eng": "English"}
         self.data_folder = data_folder
         # for language in self.languages:
@@ -711,9 +711,66 @@ class SlotDataManager:
             label, value = part
             parts.append(f"{label}: {value}")
         return " $$ ".join(parts)
-    
+
+    def get_fewshot_examples(self, language, shot_count = 40):
+        # Few Shot
+        import random
+        random.seed(2025)
+        shuffled_intents = [i for i in INTENTS]
+        random.shuffle(shuffled_intents)
+        example_data = []
+        print(shuffled_intents)
+        train_df = self.load_data(language, split="train")
+        # seqc: shot_count = 40 intent
+        # seqc: shot_count = 10 domain (5 shots)
+        # slot: shot_count = 23 slot type
+        # shot_count = 5 random
+        train_df.fillna("", inplace=True)
+        train_df = train_df[train_df["spans"] != ""]
+        # spans must contain $$
+        # print(train_df["spans"])
+        # train_df = train_df[train_df["spans"].apply(lambda x: "," in x)]
+        # domain,intent,raw,text,language,spans,logical_form
+        if shot_count == 40:
+            for intent in INTENTS:
+                line = train_df[train_df["intent"] == intent]
+                line = line[line["text"] != ""]
+                line = line.iloc[0]
+                example_data.append(line) # {"intent": line["intent"], "text": line["text"], "slot": line["xtreme-up"]})
+        elif shot_count == 10:
+            print(len(train_df["domain"].unique()), train_df["domain"].unique())
+            for domain in train_df["domain"].unique():
+                line = train_df[train_df["domain"] == domain]
+                line = line[line["text"] != ""]
+                line = line.iloc[0]
+                example_data.append(line) #{"intent": line["intent"], "text": line["text"], "slot": line["xtreme-up"]})
+        elif shot_count == 23:
+            # select first entity covers 23 slot types
+            existed_slots = set()
+            for _, line in train_df.iterrows():
+                # 17:27:SL:MONEY,36:51:SL:BANK_NAME
+                if isinstance(line["spans"], float):
+                    continue
+                slots = [slot.split(":")[-1] for slot in line["spans"].split(",")]
+                for slot in slots:
+                    if slot not in existed_slots:
+                        example_data.append(line) # {"intent": line["intent"], "text": line["text"], "slot": line["xtreme-up"]})
+                        existed_slots |= set(slots)
+                        break
+                if len(existed_slots) >= 23:
+                    break
+        else:
+            for intent in shuffled_intents[:shot_count]:
+                line = train_df[train_df["intent"] == intent]
+                line = line[line["xtreme-up"] != ""]
+                line = line.iloc[0]
+                example_data.append(line) # {"intent": line["intent"], "text": line["text"], "slot": line["xtreme-up"]})
+
+        example_data = pd.concat(example_data, axis=1).T
+        return example_data
+
     def load_data(self, language: str, split: str = "full", seed: int = 42):
-        assert language in self.languages, f"Language {language} not supported"
+        # assert language in self.languages, f"Language {language} not supported"
         assert split in ["full", "train", "dev", "test", "split"], f"Split {split} not supported"
 
         # lazy loading
@@ -727,11 +784,17 @@ class SlotDataManager:
         if split == "full":
             return data
 
-        if language == "eng":
-            splited_data = self._split_english_data(data, seed)
+        if "split" in data.columns:
+            splited_data = {}
+            for s in ["train", "dev", "test"]:
+                splited_data[s] = data[data["split"] == s].copy()
+                # splited_data[s].drop(columns=["split"], inplace=True)
         else:
-            splited_data = self._split_data(data, seed)
-        
+            if language == "eng":
+                splited_data = self._split_english_data(data, seed)
+            else:
+                splited_data = self._split_data(data, seed)
+
         if split == "split":
             return splited_data
 
@@ -759,7 +822,6 @@ class SlotDataManager:
     def _split_english_data(self, data: pd.DataFrame, seed: int):
         np.random.seed(seed)
 
-        # Assuming there's a 'slot_type' column in the DataFrame
         test_data = pd.DataFrame()
         for intent_type in INTENTS:
             intent_data = data[data["intent"] == intent_type]
@@ -817,10 +879,10 @@ class SlotDataManager:
 
             if "clinc" in language:
                 if "extend" in language:
-                    train_samples = intent_data.iloc[26:52]
+                    train_samples = intent_data.iloc[27:54]
                     dev_samples = intent_data.iloc[60:64]
                 else:
-                    train_samples = intent_data.iloc[:26]
+                    train_samples = intent_data.iloc[:27]
                     dev_samples = intent_data.iloc[56:60]
             else:
                 train_samples = intent_data.iloc[:56]

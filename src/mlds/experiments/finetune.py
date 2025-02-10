@@ -18,7 +18,7 @@ import evaluate
 ### Receive Augmentation
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "language", type=str, choices=LANGUAGES + ["all", "eng", "clinc", "eng+clinc", "clinc+extend"] + [lang+"_eng" for lang in LANGUAGES], default="amh"
+    "language", type=str, choices=LANGUAGES + ["all", "eng", "clinc", "eng+clinc", "clinc+extend", "eng+1shot"] + [lang+"_eng" for lang in LANGUAGES] + [f"clinc_{shot}shots" for shot in (5,10, 25, 50, 100)] + [f"eng_{shot}shots" for shot in (5,10,25)], default="amh"
 )
 parser.add_argument("task", type=str, choices=["seqc", "tokenc"])
 parser.add_argument("model", type=str)
@@ -47,6 +47,12 @@ set_seed(args.seed)
 # Define Parameter
 model_checkpoint = args.model
 model_name = model_basename(model_checkpoint)
+
+if args.language == "eng+1shot":
+    if args.task == "seqc":
+        args.language = "eng+40shots"
+    else:
+        args.language = "eng+23shots"
 
 if args.seed == 57706989:
     output_dir_hash = f"finetune/{args.task}/{model_name}/test/{args.language}"
@@ -525,7 +531,7 @@ for lan in LANGUAGES + ["eng"]:
     # elif args.task == "tokenc":
     #     results[lan] = compute_metrics(None, dataset=tokenized_test_dataset)
 
-if args.task == "seqc" and ("eng" in args.language or "clinc" in args.language):
+if args.task == "seqc" and ("eng" in args.language or "clinc" in args.language or "shots" in args.language):
     for lan in LANGUAGES:
         print(f"{lan}: {results[lan]}")
         lan = lan + "_eng"
