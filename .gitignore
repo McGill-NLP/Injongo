@@ -12,6 +12,7 @@ task/GPU_*.sh
 out/
 sft-dataset/
 data/weight
+data/cleaned-dataset/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
